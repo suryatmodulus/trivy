@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/CycloneDX/cyclonedx-go v0.5.0
 	github.com/Masterminds/sprig/v3 v3.2.2
-	github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46
+	github.com/NYTimes/gziphandler v1.1.1
 	github.com/aquasecurity/bolt-fixtures v0.0.0-20200903104109-d34e7f983986
 	github.com/aquasecurity/fanal v0.0.0-20220324154234-b2df5b98f8cd
 	github.com/aquasecurity/go-dep-parser v0.0.0-20220302151315-ff6d77c26988
