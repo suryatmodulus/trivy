@@ -29,15 +29,15 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Install Helm
-        uses: azure/setup-helm@fe7b79cd5ee1e45176fcad797de68ecaf3ca4814
+        uses: azure/setup-helm@1a275c3b69536ee54be43f2070a358922e12c8d4
         with:
           version: v3.14.4
       - name: Set up python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
           check-latest: true
@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Set up Git user
@@ -71,7 +71,7 @@ jobs:
           git config --global user.name "GitHub Actions"
 
       - name: Install tools
-        uses: aquaproj/aqua-installer@v3.1.1
+        uses: aquaproj/aqua-installer@v4.0.3
         with:
           aqua_version: v1.25.0
           aqua_opts: ""
@@ -91,7 +91,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Install chart-releaser

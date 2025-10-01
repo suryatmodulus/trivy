@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Check out code
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v5
 
       - name: Install tools
-        uses: aquaproj/aqua-installer@v3.1.1
+        uses: aquaproj/aqua-installer@v4.0.3
         with:
           aqua_version: v1.25.0
           aqua_opts: ""
